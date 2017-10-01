@@ -6,14 +6,14 @@
     name: '{{couchdb_group}}'
     state: present
   
-- name: create couchdb user
-  become: yes
-  become_user: root
-  user:
-    name: '{{couchdb_user}}'
-    group: '{{couchdb_group}}'
-    home: '{{couchdb_dir}}'
-    state: present
+#- name: create couchdb user
+#  become: yes
+#  become_user: root
+#  user:
+#    name: '{{couchdb_user}}'
+#    group: '{{couchdb_group}}'
+#    home: '{{couchdb_dir}}'
+#    state: present
 
 - name: create directories
   become: yes
